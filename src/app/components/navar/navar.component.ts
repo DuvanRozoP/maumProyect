@@ -11,5 +11,18 @@ export class NavarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  buttonNav =  [
+    {
+      title:"LIBROS",
+      link:"Libros"
+    },
+    {
+      title:"SELFIES",
+      link:"Selfies"
+    },
+    {
+      title:"JUEGOS",
+      link:"Juegos"
+    }
+  ]
 }

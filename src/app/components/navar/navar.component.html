@@ -1,8 +1,7 @@
 <section class="container">
-  <img class="imagenUnimeta" src="./assets/img/unimeta_universidad_villavicenciofw.png" alt="">
-  <section class="containerBotos">
-    <button class="buttonRedireccion" > LIBROS </button>
-    <button class="buttonRedireccion" > SELFIES </button>
-    <button class="buttonRedireccion" > JUEGOS </button>
+  <img class="imagenUnimeta" src="./assets/img/unimeta_universidad_villavicenciofw.png" alt="" routerLink="">
+  <section class="containerBotos" *ngFor="let button of buttonNav">
+    <button class="buttonRedireccion" routerLink="{{button.link}}"> {{button.title}} </button>
   </section>
 </section>
+<router-outlet></router-outlet>
